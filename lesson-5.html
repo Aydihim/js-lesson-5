@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let man = {
+            name: 'Aydima',
+            lastname: 'Artsaeva',
+            old: 23,
+            height: 166,
+            login: 'maybe',
+            password: 'qwerty',
+            summa: 25000,
+
+            presentation: function () {
+        if (howlogin == man.login) {
+            return `Добро пожаловать, ${man.name +' '+ man.lastname}.  Ваш логин ${man.login}`
+        }
+            return `Указанный пароль ${howlogin} не верен. Попробуйте еще раз`
+        }
+        }
+
+        man.adress = 'Grozny, st Lorsanova, 15';
+
+        let howlogin = 'mayba';
+
+        let pres = man.presentation();
+
+        console.log(pres);
+    </script>
+</body>
+</html>
